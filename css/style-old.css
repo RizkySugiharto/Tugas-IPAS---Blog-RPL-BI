@@ -1,0 +1,113 @@
+:root {
+    /* Self Settings */
+    --primary-rgb: 241, 241, 241;
+    --secondary-rgb: 226, 220, 200; 
+    --tertiary-rgb: 16, 15, 15;
+    --body-rgb: 15, 61, 62;
+    --font-rgb: var(--primary-rgb);
+
+    /* Bootstrap Settings */
+    --bs-primary-rgb: var(--primary-rgb) !important;
+    --bs-primary-bg: rgb(var(--primary-rgb)) !important;
+    --bs-primary-bg-rgb: var(--primary-rgb) !important;
+    --bs-secondary-rgb: var(--secondary-rgb) !important;
+    --bs-secondary-bg: rgb(var(--secondary-rgb)) !important;
+    --bs-secondary-bg-rgb: var(--secondary-rgb) !important;
+    --bs-tertiary-bg: rgb(var(--tertiary-rgb)) !important;
+    --bs-tertiary-bg-rgb: var(--tertiary-rgb) !important;
+    --bs-body-bg: rgb(var(--body-rgb)) !important;
+    --bs-body-bg-rgb: var(--body-rgb) !important;
+    --bs-body-color: rgba(var(--font-rgb)) !important;
+    --bs-emphasis-color-rgb: var(--font-rgb) !important;
+}
+
+/* Additional CSS */
+/* Self */
+.img-bg {
+    width: 50%;
+}
+
+@media screen and (max-width: 768px) {
+    .img-bg {
+        width: 75%;
+    }
+}
+
+@media screen and (max-width: 425px) {
+    .img-bg {
+        width: 100%;
+    }
+}
+
+html {
+    scroll-behavior: smooth;
+    scrollbar-width: none;
+}
+
+#search-bar input.form-control {
+    background-color: transparent;
+    border-color: transparent;
+    box-shadow: none;
+    font-size: 1rem;
+    font-weight: 500;
+}
+
+#search-bar {
+    height: 3rem;
+}
+
+.search-placeholder {
+    margin: 0%;
+    color: rgba(var(--font-rgb), 0.8);
+}
+
+.search-icon {
+    --icon-size: 1.75rem;
+    width: var(--icon-size);
+    height: var(--icon-size);
+}
+
+.clickable :hover {
+    cursor: pointer;
+}
+
+.unselectable {
+    user-select: none;
+    -ms-user-select: none;
+    -moz-user-select: none;
+    -webkit-user-select: none;
+}
+
+/* Bootstrap */
+
+.navbar-brand {
+    --bs-navbar-brand-color: rgba(var(--font-rgb)) !important;
+    --bs-navbar-brand-hover-color: rgba(var(--font-rgb)) !important;
+}
+
+.card {
+    --bs-card-title-color: rgb(var(--primary-rgb)) !important;
+    --bs-card-color: rgb(var(--primary-rgb)) !important;
+}
+
+.btn-outline-primary {
+    --bs-btn-color: rgb(var(--primary-rgb));
+    --bs-btn-border-color: rgb(var(--primary-rgb));
+    --bs-btn-hover-color: rgb(var(--body-rgb));
+    --bs-btn-hover-border-color: rgb(var(--primary-rgb));
+    --bs-btn-hover-bg: rgb(var(--primary-rgb));
+    --bs-btn-active-color: rgb(var(--body-rgb));
+    --bs-btn-active-border-color: rgb(var(--primary-rgb));
+    --bs-btn-active-bg: rgb(var(--primary-rgb));
+}
+
+.btn-outline-secondary {
+    --bs-btn-color: rgb(var(--secondary-rgb));
+    --bs-btn-border-color: rgb(var(--secondary-rgb));
+    --bs-btn-hover-color: rgb(var(--body-rgb));
+    --bs-btn-hover-border-color: rgb(var(--secondary-rgb));
+    --bs-btn-hover-bg: rgb(var(--secondary-rgb));
+    --bs-btn-active-color: rgb(var(--body-rgb));
+    --bs-btn-active-border-color: rgb(var(--secondary-rgb));
+    --bs-btn-active-bg: rgb(var(--secondary-rgb));
+}
